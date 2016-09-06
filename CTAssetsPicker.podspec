@@ -24,7 +24,7 @@ DESC
 s.homepage         = 'https://github.com/<GITHUB_USERNAME>/CTAssetsPicker'
 # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'wshaolin' => 'wshaolin88@126.com' }
+s.author           = { 'ishaolin' => 'ishaolin@163.com' }
 s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/CTAssetsPicker.git', :tag => s.version.to_s }
 # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
