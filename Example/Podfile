@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CTAssetsPicker_Example' do
+  pod 'CTAssetsPicker', :path => '../'
+
+  target 'CTAssetsPicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
