@@ -40,12 +40,12 @@
         _selectButton = [CTAssetsToolBarButtonItem buttonWithType:UIButtonTypeCustom];
         _selectButton.enableHighlighted = NO;
         _selectButton.backgroundColor = [UIColor clearColor];
-        [_selectButton setImage:[UIImage ctAssets_imageNamed:@"CTAssetsPickerSelectButtonNormal"] forState:UIControlStateNormal];
-        [_selectButton setImage:[UIImage ctAssets_imageNamed:@"CTAssetsPickerSelectButtonSelected"] forState:UIControlStateSelected];
+        [_selectButton setImage:[UIImage ctAssets_imageNamed:@"assets_picker_select_button_normal"] forState:UIControlStateNormal];
+        [_selectButton setImage:[UIImage ctAssets_imageNamed:@"assets_picker_select_button_selected"] forState:UIControlStateSelected];
         [_selectButton addTarget:self action:@selector(didClickSelectButton:)];
         
         _videoImageView = [[UIImageView alloc] init];
-        _videoImageView.image = [UIImage ctAssets_imageNamed:@"CTAssetsPickerVideo"];
+        _videoImageView.image = [UIImage ctAssets_imageNamed:@"assets_picker_video_icon"];
         _videoImageView.contentMode = UIViewContentModeCenter;
         _videoImageView.hidden = YES;
         

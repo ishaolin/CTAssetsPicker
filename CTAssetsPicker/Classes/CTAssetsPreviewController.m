@@ -42,8 +42,8 @@
         
         _selectBarButtonItem = [CTAssetsToolBarButtonItem buttonWithType:UIButtonTypeCustom];
         _selectBarButtonItem.enableHighlighted = NO;
-        [_selectBarButtonItem setImage:[UIImage ctAssets_imageNamed:@"CTAssetsPickerSelectButtonNormal"] forState:UIControlStateNormal];
-        [_selectBarButtonItem setImage:[UIImage ctAssets_imageNamed:@"CTAssetsPickerSelectButtonSelected"] forState:UIControlStateSelected];
+        [_selectBarButtonItem setImage:[UIImage ctAssets_imageNamed:@"assets_picker_select_button_normal"] forState:UIControlStateNormal];
+        [_selectBarButtonItem setImage:[UIImage ctAssets_imageNamed:@"assets_picker_select_button_selected"] forState:UIControlStateSelected];
         _selectBarButtonItem.backgroundColor = [UIColor clearColor];
         [_selectBarButtonItem addTarget:self action:@selector(didClickSelectBarButtonItem:)];
         _selectBarButtonItem.frame = CGRectMake(0, 0, 40.0, 40.0);
