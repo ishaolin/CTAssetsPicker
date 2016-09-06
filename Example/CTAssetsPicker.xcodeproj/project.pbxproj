@@ -21,7 +21,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		80058EFCE1AF185BBCEEB263 /* Pods_CTAssetsPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38FDF071A658FBDC49D5244 /* Pods_CTAssetsPicker_Example.framework */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8DA4CE2F9C0574D884FBD019 /* Pods_CTAssetsPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C086FF352188880042DA29 /* Pods_CTAssetsPicker_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C437B3B0AD2EF6A37F7AEF27 /* CTAssetsPicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CTAssetsPicker.podspec; path = ../CTAssetsPicker.podspec; sourceTree = "<group>"; };
 		D9AA3BF707E2FDC3DB263C78 /* Pods-CTAssetsPicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAssetsPicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTAssetsPicker_Example/Pods-CTAssetsPicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E38FDF071A658FBDC49D5244 /* Pods_CTAssetsPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTAssetsPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +130,6 @@
 			children = (
 				6003F59C195388D20070C39A /* CTAppDelegate.h */,
 				6003F59D195388D20070C39A /* CTAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* CTViewController.h */,
 				6003F5A6195388D20070C39A /* CTViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -276,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
