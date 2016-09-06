@@ -70,11 +70,11 @@
     _asset = asset;
     
     _displayImageView.image = [UIImage imageWithCGImage:_asset.aspectRatioThumbnail];
-    _selectedMask.hidden = !_asset.isSelected;
-    _selectButton.selected = _asset.isSelected;
-    _videoImageView.hidden = [_asset assetDataType] != CTAssetsPickerAssetDataTypeVideo;
+    _selectedMask.hidden = !_asset.isCt_selected;
+    _selectButton.selected = _asset.isCt_selected;
+    _videoImageView.hidden = [_asset ct_assetDataType] != CTAssetsPickerAssetDataTypeVideo;
     _videoDurationLabel.hidden = _videoImageView.isHidden;
-    _videoDurationLabel.text = [_asset videoDuration];
+    _videoDurationLabel.text = [_asset ct_videoDuration];
 }
 
 - (void)layoutSubviews{
@@ -112,11 +112,11 @@
     }
     
     if(shouldSelection){
-        _asset.selected = !_asset.isSelected;
+        _asset.ct_selected = !_asset.isCt_selected;
         self.asset = _asset;
         
         if(self.delegate && [self.delegate respondsToSelector:@selector(assetsCollectionViewCell:didSelectedAsset:withIndexPath:)]){
-            [self.delegate assetsCollectionViewCell:self didSelectedAsset:_asset.isSelected withIndexPath:self.indexPath];
+            [self.delegate assetsCollectionViewCell:self didSelectedAsset:_asset.isCt_selected withIndexPath:self.indexPath];
         }
     }
 }

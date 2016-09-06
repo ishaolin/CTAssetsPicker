@@ -11,16 +11,15 @@
 
 @implementation ALAsset (CTAssetEqual)
 
-- (void)setSelected:(BOOL)selected{
-    objc_setAssociatedObject(self, @selector(setSelected:), @(selected), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setCt_selected:(BOOL)ct_selected{
+    objc_setAssociatedObject(self, @selector(isCt_selected), @(ct_selected), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (BOOL)isSelected{
-    NSNumber *selected = objc_getAssociatedObject(self, @selector(setSelected:));
-    return [selected boolValue];
+- (BOOL)isCt_selected{
+    return [objc_getAssociatedObject(self, @selector(isCt_selected)) boolValue];
 }
 
-- (CTAssetsPickerAssetDataType)assetDataType{
+- (CTAssetsPickerAssetDataType)ct_assetDataType{
     NSString *assetPropertyType = [self valueForProperty:ALAssetPropertyType];
     if([assetPropertyType isEqualToString:ALAssetTypePhoto]){
         return CTAssetsPickerAssetDataTypePhoto;
@@ -31,7 +30,7 @@
     }
 }
 
-- (NSString *)videoDuration{
+- (NSString *)ct_videoDuration{
     NSTimeInterval timeInterval = [[self valueForProperty:ALAssetPropertyDuration] floatValue];
     int timeValue = (int)lroundf(timeInterval);
     
@@ -61,8 +60,9 @@
     return nil;
 }
 
-- (BOOL)isEquals:(ALAsset *)asset{
-    if([asset isKindOfClass:[ALAsset class]]){
+- (BOOL)ct_isEqual:(id)object{
+    if([object isKindOfClass:[ALAsset class]]){
+        ALAsset *asset = (ALAsset *)object;
         NSURL *selfURL = [self valueForProperty:ALAssetPropertyAssetURL];
         NSURL *assetURL = [asset valueForProperty:ALAssetPropertyAssetURL];
         return [selfURL.absoluteString isEqualToString:assetURL.absoluteString];

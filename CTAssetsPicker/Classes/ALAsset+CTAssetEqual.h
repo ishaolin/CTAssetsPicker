@@ -16,11 +16,11 @@ typedef NS_ENUM(NSInteger, CTAssetsPickerAssetDataType){
 
 @interface ALAsset (CTAssetEqual)
 
-@property (nonatomic, assign, getter = isSelected) BOOL selected;
+@property (nonatomic, assign, getter = isCt_selected) BOOL ct_selected;
 
-- (CTAssetsPickerAssetDataType)assetDataType;
-- (NSString *)videoDuration;
+- (CTAssetsPickerAssetDataType)ct_assetDataType;
+- (NSString *)ct_videoDuration;
 
-- (BOOL)isEquals:(ALAsset *)asset;
+- (BOOL)ct_isEqual:(id)object;
 
 @end

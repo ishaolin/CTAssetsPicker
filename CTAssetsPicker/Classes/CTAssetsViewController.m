@@ -107,8 +107,8 @@
 
 - (void)assetsCollectionViewCell:(CTAssetsCollectionViewCell *)assetsCollectionViewCell didSelectedAsset:(BOOL)isSelected withIndexPath:(NSIndexPath *)indexPath{
     ALAsset *asset = _assets[indexPath.row];
-    asset.selected = isSelected;
-    if(asset.isSelected){
+    asset.ct_selected = isSelected;
+    if(asset.isCt_selected){
         [_collectionView reloadItemsAtIndexPaths:@[indexPath]];
         [_selectAssets addObject:asset];
         _toolBar.selectedCount = _selectAssets.count;
@@ -174,8 +174,8 @@
     if(index < _selectAssets.count){
         for(NSInteger i = 0; i < _assets.count; i ++){
             ALAsset *asset = _assets[i];
-            if([asset isEquals:_selectAssets[index]]){
-                asset.selected = NO;
+            if([asset ct_isEqual:_selectAssets[index]]){
+                asset.ct_selected = NO;
                 
                 NSIndexPath *indexPath = [NSIndexPath indexPathForItem:i inSection:0];
                 [_collectionView reloadItemsAtIndexPaths:@[indexPath]];
@@ -203,8 +203,8 @@
 - (void)assetsPreviewController:(CTAssetsPreviewController *)assetsPreviewController didSelectedAsset:(ALAsset *)asset{
     for(NSInteger index = 0; index < _assets.count; index ++){
         ALAsset *asset1 = _assets[index];
-        if([asset1 isEquals:asset]){
-            asset1.selected = asset.isSelected;
+        if([asset1 ct_isEqual:asset]){
+            asset1.ct_selected = asset.isCt_selected;
             
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
             [_collectionView reloadItemsAtIndexPaths:@[indexPath]];
@@ -213,7 +213,7 @@
         }
     }
     
-    if(asset.isSelected){
+    if(asset.isCt_selected){
         [_selectAssets addObject:asset];
         if(_assetsPickerController.delegate && [_assetsPickerController.delegate respondsToSelector:@selector(assetsPickerController:didSelectAsset:)]){
             [_assetsPickerController.delegate assetsPickerController:_assetsPickerController didSelectAsset:asset];

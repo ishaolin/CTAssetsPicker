@@ -91,7 +91,7 @@
     if(self.assetArray.count > 0 && _currentAssetIndex < self.assetArray.count){
         [_collectionView scrollToItemAtIndexPath:indexPath];
         ALAsset *asset = _assetArray[indexPath.row];
-        _selectBarButtonItem.selected = asset.isSelected;
+        _selectBarButtonItem.selected = asset.isCt_selected;
     }
 }
 
@@ -115,7 +115,7 @@
         if(_currentAssetIndex < _assetArray.count){
             barButtonItem.selected = !barButtonItem.isSelected;
             ALAsset *asset = _assetArray[_currentAssetIndex];
-            asset.selected = barButtonItem.isSelected;
+            asset.ct_selected = barButtonItem.isSelected;
             if(self.delegate && [self.delegate respondsToSelector:@selector(assetsPreviewController:didSelectedAsset:)]){
                 [self.delegate assetsPreviewController:self didSelectedAsset:asset];
             }
@@ -165,7 +165,7 @@
     }
     
     ALAsset *asset = _assetArray[_currentAssetIndex];
-    _selectBarButtonItem.selected = asset.isSelected;
+    _selectBarButtonItem.selected = asset.isCt_selected;
 }
 
 - (BOOL)shouldAutorotate{

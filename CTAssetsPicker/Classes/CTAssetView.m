@@ -103,7 +103,7 @@
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    if([self.asset assetDataType] == CTAssetsPickerAssetDataTypePhoto){
+    if([self.asset ct_assetDataType] == CTAssetsPickerAssetDataTypePhoto){
         return _imageView;
     }
     return nil;
