@@ -514,7 +514,7 @@
 				INFOPLIST_FILE = "CTAssetsPicker/CTAssetsPicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.CTAssetsPicker.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.CTAssetsPicker-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -532,7 +532,7 @@
 				INFOPLIST_FILE = "CTAssetsPicker/CTAssetsPicker-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.CTAssetsPicker.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.CTAssetsPicker-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
