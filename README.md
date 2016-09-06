@@ -68,43 +68,43 @@ assetsPickerController.enableMaximumCount = 9;
 [self presentViewController:assetsPickerController animated:YES completion:NULL];
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didFinishPickingAssets:(NSArray *)assets assetsType:(CTAssetsPickerControllerAssetsType)assetsType{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
-switch (assetsType) {
-case CTAssetsPickerControllerAssetsTypePhoto:{
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didFinishPickingAssets:assetsType:)));
+    switch (assetsType) {
+        case CTAssetsPickerControllerAssetsTypePhoto:{
 
-}
-break;
-case CTAssetsPickerControllerAssetsTypeVideo:{
+    }
+        break;
+        case CTAssetsPickerControllerAssetsTypeVideo:{
 
-}
-break;
-case CTAssetsPickerControllerAssetsTypeAllAsset:{
+    }
+        break;
+        case CTAssetsPickerControllerAssetsTypeAllAsset:{
 
-}
-break;
-default:
-break;
-}
+    }
+        break;
+        default:
+        break;
+    }
 }
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didDeselectAsset:(ALAsset *)asset{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didDeselectAsset:)));
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didDeselectAsset:)));
 }
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectAsset:(ALAsset *)asset{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectAsset:)));
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectAsset:)));
 }
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectCountReachedEnableMaximumCount:(NSUInteger)enableMaximumCount{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountReachedEnableMaximumCount:)));
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountReachedEnableMaximumCount:)));
 }
 
 - (void)assetsPickerController:(CTAssetsPickerController *)assetsPickerController didSelectCountUnderEnableMinimumCount:(NSUInteger)enableMinimumCount{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountUnderEnableMinimumCount:)));
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerController:didSelectCountUnderEnableMinimumCount:)));
 }
 
 - (void)assetsPickerControllerDidCancel:(CTAssetsPickerController *)assetsPickerController{
-NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerControllerDidCancel:)));
+    NSLog(@"%@", NSStringFromSelector(@selector(assetsPickerControllerDidCancel:)));
 }
 
 ````
