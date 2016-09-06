@@ -1,6 +1,6 @@
 //
 //  CTAssetsPreviewCollectionView.h
-//  CTAssetsPickerDemo
+//  Pods
 //
 //  Created by wshaolin on 15/7/27.
 //  Copyright © 2016年 wshaolin. All rights reserved.

@@ -7,12 +7,20 @@
 //
 
 #import "CTAppDelegate.h"
+#import "CTAssetsPickerDemoViewController.h"
 
 @implementation CTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    CTAssetsPickerDemoViewController *assetsPickerDemoViewController = [[CTAssetsPickerDemoViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:assetsPickerDemoViewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

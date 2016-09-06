@@ -1,6 +1,6 @@
 //
 //  UIImage+CTAssetsPicker.m
-//  CTActionKit
+//  Pods
 //
 //  Created by wshaolin on 16/7/7.
 //  Copyright © 2016年 wshaolin. All rights reserved.
@@ -12,7 +12,7 @@
 
 + (UIImage *)ctAssets_imageNamed:(NSString *)name{
     if(name != nil && name.length > 0){
-        name =[@"CTAssetsPicker.bundle" stringByAppendingPathComponent:name];
+        name = [@"Frameworks/CTAssetsPicker.framework/CTAssetsPicker.bundle" stringByAppendingPathComponent:name];
         return [UIImage imageNamed:name];
     }
     

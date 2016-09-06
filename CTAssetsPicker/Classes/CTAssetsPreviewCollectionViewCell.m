@@ -1,6 +1,6 @@
 //
 //  CTAssetsPreviewCollectionViewCell.m
-//  CTAssetsPickerDemo
+//  Pods
 //
 //  Created by wshaolin on 15/7/17.
 //  Copyright © 2016年 wshaolin. All rights reserved.

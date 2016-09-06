@@ -1,6 +1,6 @@
 //
 //  CTAssetsGroupTableViewCell.h
-//  CTAssetsPicker
+//  Pods
 //
 //  Created by wshaolin on 15/7/9.
 //  Copyright © 2016年 wshaolin. All rights reserved.

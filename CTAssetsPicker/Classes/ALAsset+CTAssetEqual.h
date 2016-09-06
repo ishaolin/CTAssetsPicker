@@ -1,6 +1,6 @@
 //
 //  ALAsset+CTAssetEqual.h
-//  CTAssetsPickerDemo
+//  Pods
 //
 //  Created by wshaolin on 15/7/13.
 //  Copyright © 2016年 wshaolin. All rights reserved.

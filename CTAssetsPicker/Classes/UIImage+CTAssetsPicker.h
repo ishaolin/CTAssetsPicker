@@ -1,6 +1,6 @@
 //
 //  UIImage+CTAssetsPicker.h
-//  CTActionKit
+//  Pods
 //
 //  Created by wshaolin on 16/7/7.
 //  Copyright © 2016年 wshaolin. All rights reserved.
