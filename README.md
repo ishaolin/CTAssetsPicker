@@ -2,6 +2,10 @@
 
 从相册选择图片或者视频（ARC），已支持图片的预览（放大），暂不支持视频的播放预览，不支持横竖屏的切换。
 
+## Requirements
+
+iOS 8以上，ARC
+
 ## Installation
 
 CTActionKit is available through [CocoaPods](http://cocoapods.org). To install
