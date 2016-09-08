@@ -2,6 +2,15 @@
 
 从相册选择图片或者视频（ARC），已支持图片的预览（放大），暂不支持视频的播放预览，不支持横竖屏的切换。
 
+## Installation
+
+CTActionKit is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'CTAssetsPicker', :git => 'https://github.com/ishaolin/CTAssetsPicker.git'
+```
+
 ![Screenshot](Screenshot1.jpg "Screenshot")
 ![Screenshot](Screenshot2.jpg "Screenshot")
 ![Screenshot](Screenshot3.jpg "Screenshot")
